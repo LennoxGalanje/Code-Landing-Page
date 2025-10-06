@@ -2,7 +2,7 @@
  * @file This script handles the interactive elements of the CODE website,
  * including the hamburger menu, FAQ accordion, review card animations, and
  * scroll animations.
- * @author Your Name
+ * @author Lennox Galanje
  * @version 1.0.0
  */
 
