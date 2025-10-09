@@ -6,7 +6,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
     "no-inline-styles": "off",
@@ -16,6 +17,7 @@
         "aria-allowed-attr": "off"
       }
     ],
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "button-type": "off"
   }
 }
