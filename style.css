@@ -959,7 +959,8 @@ a:any-link {
 @media screen and (min-width: 1024px) {
   /* || NAV-HEADER */
   .nav-header {
-    margin: 0;
+   padding-left: 102px;
+   padding-right: 102px;
   }
   .nav-header__links {
     flex: 1;
