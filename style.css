@@ -223,7 +223,7 @@ a:any-link {
   flex-flow: row;
   width: 100%;
   position: fixed;
-  top:0;
+  top: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   background-color: #ffffff;
@@ -374,7 +374,9 @@ a:any-link {
   font: var(--BUTTON-MOB);
   color: var(--CRL-WHITE);
   background-color: var(--CLR-CYAN);
-  padding: 0.3475rem 0.6956rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--CLR-CYAN);
+  border-width: 2px;
   border-radius: 54px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
@@ -420,7 +422,7 @@ a:any-link {
   font: var(--BUTTON-MOB);
   color: var(--CLR-CYAN);
   border: 1px solid var(--CLR-CYAN);
-  padding: 0.3475rem 0.6956rem;
+  padding: .5rem 1rem ;
   border-radius: 54px;
   transition: all 0.3s ease-in-out;
 }
@@ -959,8 +961,8 @@ a:any-link {
 @media screen and (min-width: 1024px) {
   /* || NAV-HEADER */
   .nav-header {
-   padding-left: 102px;
-   padding-right: 102px;
+    padding-left: 102px;
+    padding-right: 102px;
   }
   .nav-header__links {
     flex: 1;
@@ -1017,17 +1019,17 @@ a:any-link {
   .hero__content-btn {
     gap: 1.75rem;
   }
-  .hero-cta__filled {
+  /* .hero-cta__filled {
     font: var(--BUTTON-DSK);
     padding: 0.5rem 1rem;
     border-radius: 78px;
-  }
-  .hero-cta__outlined {
+  } */
+  /* .hero-cta__outlined {
     font: var(--BUTTON-DSK);
     border: 2px solid var(--CLR-CYAN);
     padding: 0.5rem 1rem;
     border-radius: 78px;
-  }
+  } */
 
   .hero__visual-image img {
     width: 580px;
