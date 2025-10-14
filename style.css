@@ -140,7 +140,8 @@ a:any-link {
 }
 
 .toggle-menu__item:hover {
-  scale: 1.5;
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .social-link:hover {
@@ -181,7 +182,7 @@ a:any-link {
   gap: 0.625rem;
   margin-top: 3.25rem;
   margin-bottom: 3.0625rem;
-  /* font: var(--DESCRIPTION2-MOB); */
+  font: var(--TITLE-MOB);
 }
 
 .toggle-menu__social-links {
@@ -224,7 +225,7 @@ a:any-link {
 .cta-btn__connect:focus {
   background: rgba(255, 255, 255, 0.25);
   transform: scale(1.05);
-  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+  box-shadow:  0 0 20px rgba(255, 255, 255, 0.5);
 }
 /* || NAV-HEADER */
 .nav-header {
@@ -983,7 +984,7 @@ a:any-link {
 }
 
 /* || DESKTOP VIEW  */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   /* || NAV-HEADER */
   .nav-header {
     padding-left: 102px;
@@ -996,6 +997,8 @@ a:any-link {
   .menu__icon {
     display: none;
   }
+
+
 
   /* || HEADER */
   .header {

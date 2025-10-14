@@ -8,32 +8,42 @@
 
 /**
  * Manages the behavior of the hamburger menu.
- *
- * This function adds click event listeners to the menu and close icons
- * to toggle the visibility of the mobile navigation menu.
- * @returns {void}
  */
 function handleHamburgerMenu() {
   const getMenu = document.getElementById("get-menu");
   const toggleMenu = document.querySelector(".toggle-menu");
   const closeIcon = document.querySelector(".icon-toggle__close");
 
+  // Open Menu
   getMenu.addEventListener("click", () => {
     toggleMenu.style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 
+  // Close Menu
   closeIcon.addEventListener("click", () => {
     toggleMenu.style.display = "none";
+    document.body.style.overflow = "";
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      toggleMenu.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  });
+
+  const menuLinks = document.querySelectorAll(".toggle-menu__item .link");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      toggleMenu.style.display = "none";
+      document.body.style.overflow = "";
+    });
   });
 }
 
 /**
  * Controls the FAQ accordion feature.
- *
- * This function allows users to click on a question to expand the answer
- * while collapsing any other open answers. It also updates the icon
- * to indicate the state (open/closed).
- * @returns {void}
  */
 function handleFAQAccordion() {
   const faqItems = document.querySelectorAll(".faq-card__question");
@@ -64,20 +74,11 @@ function handleFAQAccordion() {
 
 /**
  * Manages the animated stack of review cards.
- *
- * This function creates a shuffling effect for the review cards, where
- * they are stacked and rotated. The top card is periodically moved to the
- * bottom of the stack to create a continuous animation loop.
- * @returns {void}
  */
 function handleReviewCards() {
   const cards = Array.from(document.querySelectorAll(".review__card"));
   let angleStep = -10;
 
-  /**
-   * Applies CSS transforms to stack and rotate the cards.
-   * @returns {void}
-   */
   function applyStackTransforms() {
     cards.forEach((card, index) => {
       card.style.zIndex = cards.length - index;
@@ -88,10 +89,6 @@ function handleReviewCards() {
     });
   }
 
-  /**
-   * Shuffles the card stack by moving the first card to the end.
-   * @returns {void}
-   */
   function shuffleStack() {
     const topCard = cards.shift();
     cards.push(topCard);
@@ -105,10 +102,6 @@ function handleReviewCards() {
 
 /**
  * Initializes the Animate On Scroll (AOS) library.
- *
- * This function starts the AOS library, which enables animations
- * as elements scroll into view.
- * @returns {void}
  */
 function initializeAOS() {
   AOS.init();
@@ -116,9 +109,6 @@ function initializeAOS() {
 
 /**
  * Main entry point for the application.
- *
- * This function waits for the DOM to be fully loaded and then initializes
- * all the interactive components of the page.
  */
 document.addEventListener("DOMContentLoaded", () => {
   handleHamburgerMenu();
