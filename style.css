@@ -680,11 +680,16 @@ a:any-link {
   margin-top: 32px;
 }
 
-.review__card-avatar {
+.review__avatar {
   display: flex;
   flex-flow: column;
   gap: 0px;
-  margin-top: 40px;
+  /* margin-top: 2.5rem; */
+  margin-bottom: .75rem;
+}
+.review__avatar img{
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.5
+  ));
 }
 
 .review__card-avatar-name {
