@@ -268,3 +268,502 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/9abf73d046.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-screen font-Poppins">
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between md:justify-start"
+      >
+        <!-- Logo - Leftmost on md+ screens -->
+        <div class="text-2xl font-bold text-green-600 md:flex-shrink-0">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <!-- Desktop Menu - Center on md+ screens -->
+        <ul
+          class="hidden md:flex space-x-10 text-gray-700 font-medium md:flex-1 md:justify-center md:font-bold md:text-xl md:text-[#004342]"
+        >
+          <li><a href="/index.html" class="hover:text-[#004342] transition">Home</a></li>
+          <li>
+            <a href="/index.html#services" class="hover:text-[#004342] transition">Services</a>
+          </li>
+          <li>
+            <a href="/index.html#About-Us" class="hover:text-[#004342] transition">About Us</a>
+          </li>
+        </ul>
+
+        <!-- Desktop Button - Rightmost on md+ screens -->
+        <div class="hidden md:block md:flex-shrink-0 md:ml-auto">
+          <button
+            class="px-4 py-2 border-2 border-green-600 text-[#004342] rounded-lg hover:bg-green-600 hover:text-white transition md:border-[#004342] md:hover:bg-[#004342] md:hover:border-[#004342]"
+          >
+            Let's Connect
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button
+          id="menu-btn"
+          class="md:hidden flex flex-col space-y-1.5 p-2 hover:bg-gray-100 rounded-lg transition"
+        >
+          <span
+            id="hamburger-line-1"
+            class="w-6 h-0.5 bg-gray-800 transition-transform duration-300"
+          ></span>
+          <span
+            id="hamburger-line-2"
+            class="w-6 h-0.5 bg-gray-800 transition-transform duration-300"
+          ></span>
+          <span
+            id="hamburger-line-3"
+            class="w-6 h-0.5 bg-gray-800 transition-transform duration-300"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-[#064B49] transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40"
+      >
+        <div class="flex flex-col h-full p-6">
+          <!-- Mobile Menu Header with Logo and Close Button -->
+          <div class="flex justify-between items-center mb-6">
+            <!-- Logo on the left -->
+            <div class="text-xl font-bold text-white">
+              <img src="images/Logo1.png" alt="" />
+            </div>
+
+            <!-- Close Button on the right -->
+            <button
+              id="close-menu-btn"
+              class="p-2 hover:bg-white/10 rounded-lg transition"
+            >
+              <i class="fas fa-times text-2xl text-[#F3E2C8]"></i>
+            </button>
+          </div>
+
+          <!-- Profile Image -->
+          <div class="flex justify-center mb-6">
+            <img
+              src="images/Profile.png"
+              alt="Profile"
+              class="w-50 h-50 mt-4"
+            />
+          </div>
+
+          <!-- Menu Items -->
+          <ul
+            class="flex-1 flex flex-col items-center mt-4 space-y-6 text-3xl font-semibold text-white"
+          >
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Process</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-orange-400 transition">Blog</a>
+            </li>
+          </ul>
+
+          <!-- Contact Us Button -->
+          <div class="flex justify-center mb-6">
+            <button
+              class="w-40 px-4 py-2 bg-[#1F7A77] text-white rounded-lg shadow-md hover:bg-[#1F7A77] transition"
+            >
+              Contact Us
+            </button>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex flex-row justify-center space-x-3 mt-auto pb-6">
+            <a
+              href="#"
+              class="text-white/70 hover:text-[#1F7A77] text-sm transition flex items-center space-x-1"
+              ><i class="fa-brands fa-behance fa-xs"></i><span>Behance</span></a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-[#1F7A77] text-sm transition flex items-center space-x-1"
+              ><i class="fa-brands fa-dribbble fa-xs"></i
+              ><span>Dribbble</span></a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-[#1F7A77] text-sm transition flex items-center space-x-1"
+              ><i class="fab fa-facebook fa-xs"></i><span>Facebook</span></a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-[#1F7A77] text-sm transition flex items-center space-x-1"
+              ><i class="fab fa-instagram fa-xs"></i><span>Instagram</span></a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-[#1F7A77] text-sm transition flex items-center space-x-1"
+              ><i class="fab fa-linkedin fa-xs"></i><span>Linkedin</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content area starts here -->
+    <!-- Contact Us Section -->
+    <section id="contact-section" class="pt-24 pb-16 px-6">
+      <div
+        class="main-warper flex flex-col md:flex-row md:gap-4 md:justify-center md:items-center md:px-24 md:py-12"
+      >
+        <!-- white warper -->
+        <div
+          class="inner-warper md:w-2/5 md:h-full flex flex-col md:flex-row md:p-12"
+        >
+          <div class="contact-us-section flex-1 lg:w-1/2">
+            <!-- Main Heading -->
+            <div class="text-start mb-6 md:mt-8">
+              <h1 class="text-xl md:text-3xl font-bold text-[#064B49] mb-6">
+                Contact Us
+              </h1>
+
+              <!-- Colorful Sub-heading -->
+              <div
+                class="heading-text text-3xl md:text-3xl font-bold leading-tight"
+              >
+                <h2
+                  class="bg-gradient-to-r from-[#178C99] to-[#F28A02] bg-clip-text text-transparent"
+                >
+                  Feel Free To Contact Us <br />Anytime, Our Team Will Get
+                  <br />
+                  Back To You Shortly
+                </h2>
+              </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div>
+              <!-- Customer Support -->
+              <div class="text-start md:text-left">
+                <h3 class="text-2xl md:text-3xl font-bold text-black mb-4">
+                  Customer Support
+                </h3>
+                <p
+                  class="text-black text-xl text-base md:text-2xl leading-relaxed"
+                >
+                  Our support team is available 24/7 to assist with any
+                  questions or information you need.
+                </p>
+              </div>
+
+              <!-- Feedback and Suggestions -->
+              <div class="text-start md:text-left py-4">
+                <h3 class="text-2xl md:text-2xl font-bold text-black mb-2">
+                  Feedback and Suggestions
+                </h3>
+                <p class="text-black text-base md:text-xl leading-relaxed">
+                  We value your important feedbacks and are continuously working
+                  towards improving ourselves to help you better.
+                </p>
+              </div>
+            </div>
+
+            <!-- ======================================Inner Warper for Jerry====================================== -->
+
+            <!-- contact detils  -->
+            <div
+              class="contact-details p-2 mt-4 bg-gray-200 md:p-6 lg:rounded-lg"
+            >
+              <div class="row flex flex-col gap-4 md:gap-6">
+                <!-- col-1 -->
+                <div
+                  class="inner-row-1 flex flex-row md:flex-row justify-between gap-4"
+                >
+                  <div
+                    class="col-1 flex flex-row justify-start gap-2 p-3 md:p-4 bg-white md:w-20% md:h-20 md:rounded-lg shadow-sm"
+                  >
+                    <i
+                      class="fa-solid fa-envelope text-sm md:text-2xl text-black mt-2 md:mt-3"
+                    ></i>
+                    <div>
+                      <p class="font-semibold md:text-lg">Email</p>
+                      <p class="text-gray-600 text-sm md:text-base">
+                        info.code2025@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <!-- col-2 -->
+                  <div
+                    class="col-1 flex flex-row justify-start gap-2 p-3 md:p-4 bg-white md:w-20% md:h-20 md:rounded-lg shadow-sm"
+                  >
+                    <i
+                      class="fa-solid fa-phone text-sm md:text-2xl text-black mt-2 md:mt-3"
+                    ></i>
+                    <div>
+                      <p class="font-semibold md:text-lg">Mobile</p>
+                      <p class="text-gray-600 text-[10px] md:text-[13px]">
+                        +919022962965|+918983516874
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- col-3 -->
+                <div
+                  class="inner-row-2 flex flex-row md:flex-row justify-between gap-4"
+                >
+                  <div
+                    class="col-1 flex flex-row justify-start gap-2 p-3 md:p-2 bg-white md:w-20% md:h-20 md:rounded-lg shadow-sm"
+                  >
+                    <i
+                      class="fa-solid fa-clock text-sm md:text-2xl text-black mt-2 md:mt-3"
+                    ></i>
+                    <div>
+                      <p class="font-semibold md:text-lg">Availability</p>
+                      <p class="text-gray-600 text-[12px] md:text-base">
+                        Daily From 9:00AM-5:00PM
+                      </p>
+                    </div>
+                  </div>
+                  <!-- col-4 -->
+                  <div
+                    class="col-1 flex flex-row justify-between items-center gap-2 p-3 md:p-4 bg-white md:w-[250px] md:h-20 md:rounded-lg shadow-sm"
+                  >
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fab fa-behance"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-gray-700 hover:text-black text-lg md:text-xl transition-colors"
+                      ><i class="fas fa-globe"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- form section -->
+
+        <div class="form-section md:w-2/5 md:h-full md:p-12">
+          <div
+            class="bg-gray-400/50 p-6 md:p-8 rounded-lg w-full mt-14 md:mt-0 md:shadow-lg"
+          >
+            <!-- Name -->
+            <label
+              class="block text-sm md:text-base text-black mb-1 md:mb-2 font-bold"
+              >Name</label
+            >
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full mb-4 md:mb-6 p-3 md:p-4 rounded-md focus:outline-none bg-white h-12 md:h-14 text-sm md:text-base"
+            />
+
+            <!-- Email -->
+            <label
+              class="block text-sm md:text-base text-black mb-1 md:mb-2 font-bold"
+              >Email<span class="text-red-500">*</span></label
+            >
+            <input
+              type="email"
+              placeholder="Business Email"
+              class="w-full mb-4 md:mb-6 p-3 md:p-4 rounded-md focus:outline-none bg-white h-12 md:h-14 text-sm md:text-base"
+            />
+
+            <!-- Mobile -->
+            <label
+              class="block text-sm md:text-base text-black mb-1 md:mb-2 font-bold"
+              >Mobile No<span class="text-red-500">*</span></label
+            >
+            <input
+              type="tel"
+              placeholder="Your mobile number"
+              class="w-full mb-4 md:mb-6 p-3 md:p-4 rounded-md focus:outline-none bg-white h-12 md:h-14 text-sm md:text-base"
+            />
+
+            <!-- Service & Message -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6"
+            >
+              <div>
+                <label
+                  class="block text-sm md:text-base text-black mb-1 md:mb-2 font-bold"
+                  >What service do you need ?<span class="text-red-500"
+                    >*</span
+                  ></label
+                >
+                <div class="relative">
+                  <button
+                    type="button"
+                    class="w-full p-3 md:p-4 rounded-md bg-white border border-gray-300 text-left focus:outline-none h-12 md:h-14 text-sm md:text-base"
+                    onclick="toggleDropdown()"
+                  >
+                    <span id="selected-service">Web design</span>
+                    <i
+                      class="fas fa-chevron-down float-right text-gray-400"
+                    ></i>
+                  </button>
+                  <div
+                    id="dropdown-menu"
+                    class="absolute w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg hidden z-10"
+                  >
+                    <div
+                      class="p-3 hover:bg-black hover:text-white cursor-pointer rounded-t-md transition-colors"
+                      onclick="selectService('Web design')"
+                    >
+                      Web design
+                    </div>
+                    <div
+                      class="p-3 hover:bg-black hover:text-white cursor-pointer transition-colors"
+                      onclick="selectService('Branding')"
+                    >
+                      Branding
+                    </div>
+                    <div
+                      class="p-3 hover:bg-black hover:text-white cursor-pointer transition-colors"
+                      onclick="selectService('UX design')"
+                    >
+                      UX design
+                    </div>
+                    <div
+                      class="p-3 hover:bg-black hover:text-white cursor-pointer rounded-b-md transition-colors"
+                      onclick="selectService('Business consultation')"
+                    >
+                      Business consultation
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-sm md:text-base text-black mb-1 md:mb-2 font-bold"
+                  >Message<span class="text-red-500">*</span></label
+                >
+                <textarea
+                  placeholder="How can we help"
+                  class="w-full p-3 md:p-4 rounded-md focus:outline-none bg-white h-24 md:h-28 text-sm md:text-base resize-none"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              class="w-full bg-teal-800 hover:bg-teal-900 text-white font-medium py-4 md:py-5 rounded-md text-sm md:text-base transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <div
+      class="footer-section bg-teal-900 flex flex-col md:flex-row md:justify-between md:items-center md:px-24 md:py-8 justify-center items-center gap-4 w-full py-12 mt-24"
+    >
+      <!-- Logo on the left -->
+      <div class="footer-logo mb-6 md:mb-0">
+        <img src="images/Logo1.png" alt="" />
+      </div>
+
+      <!-- Navigation links in the middle -->
+      <div class="footer-menu flex-1 flex justify-center">
+        <ul
+          class="flex flex-col md:flex-row justify-center items-center gap-8 text-white text-xl mb-6 md:mb-0"
+        >
+          <li
+            class="hover:text-teal-600 cursor-pointer transition-colors duration-300"
+          >
+            Home
+          </li>
+          <li
+            class="hover:text-teal-600 cursor-pointer transition-colors duration-300"
+          >
+            About Us
+          </li>
+          <li
+            class="hover:text-teal-600 cursor-pointer transition-colors duration-300"
+          >
+            Services
+          </li>
+          <li
+            class="hover:text-teal-600 cursor-pointer transition-colors duration-300"
+          >
+            Testimonials
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social icons on the right -->
+      <div
+        class="footer-icons flex justify-center gap-6 text-white mb-6 md:mb-0"
+      >
+        <i
+          class="fa-brands fa-linkedin text-xl hover:text-teal-600 cursor-pointer transition-colors duration-300"
+        ></i>
+        <i
+          class="fa-brands fa-facebook text-xl hover:text-teal-600 cursor-pointer transition-colors duration-300"
+        ></i>
+        <i
+          class="fa-brands fa-instagram text-xl hover:text-teal-600 cursor-pointer transition-colors duration-300"
+        ></i>
+        <i
+          class="fa-brands fa-behance text-xl hover:text-teal-600 cursor-pointer transition-colors duration-300"
+        ></i>
+        <i
+          class="fa-brands fa-dribbble text-xl hover:text-teal-600 cursor-pointer transition-colors duration-300"
+        ></i>
+      </div>
+    </div>
+
+    <footer
+      class="bg-teal-900 flex flex-row md:flex-row md:justify-between md:items-center px-6 md:px-24 justify-between items-center gap-4 w-full md:py-2 text-white/50 underline"
+    >
+      <a href="#" class="lg:text-left">Terms of Service</a>
+      <a href="#" class="lg:text-right">Privacy Policy</a>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

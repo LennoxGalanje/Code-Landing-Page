@@ -6,7 +6,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
       }
     ],
     "no-inline-styles": "off",
@@ -16,6 +17,20 @@
         "aria-allowed-attr": "off"
       }
     ],
-    "disown-opener": "off"
-  }
+    "disown-opener": "off",
+    "button-type": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 137",
+    "not and_ff <= 139",
+    "not chrome <= 137",
+    "not edge <= 137",
+    "not firefox <= 139",
+    "not ios_saf <= 18.5",
+    "not opera <= 117",
+    "not safari <= 18.5",
+    "not samsung <= 28"
+  ]
 }
