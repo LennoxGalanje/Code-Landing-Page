@@ -6,7 +6,12 @@
     <meta name="description" content="landing page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/Assets/fav_icon.ico" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/9abf73d046.js"
+      crossorigin="anonymous"
+    ></script>
     <title>consortium of digital engineers</title>
   </head>
   <body>
@@ -36,13 +41,13 @@
             <a href="/index.html" class="nav-link">Home</a>
           </li>
           <li id="about-us" class="nav-item">
-            <a  href="#About-Us" class="nav-link">About Us</a>
+            <a href="#About-Us" class="nav-link">About Us</a>
           </li>
           <li id="services" class="nav-item">
-            <a  href="#services" class="nav-link">Services</a>
+            <a href="#service" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a id="reviews" href="#reviews" class="nav-link">Testimonials</a>
+            <a id="reviews" href="#review" class="nav-link">Testimonials</a>
           </li>
         </ul>
       </div>
@@ -164,66 +169,34 @@
           >
 
           <div class="toggle-menu__social-links">
-            <a href="https://www.behance.net/C_O_D_E" target="_blank">
+            <a href="https://www.linkedin.com/company/consortium-of-digital-engineers/" target="_blank">
               <figure class="social-link">
-                <img
-                  src="./Assets/icon_social_behance.svg"
-                  width="9"
-                  height="9"
-                  alt="behance-icon"
-                  loading="lazy"
-                />
-                <figcaption class="offscreen">behance-icon</figcaption>
-              </figure>
-            </a>
-            <a href="#" target="_blank">
-              <figure class="social-link">
-                <img
-                  src="./Assets/icon_social_dribble.svg"
-                  width="7"
-                  height="8"
-                  alt="dribble-icon"
-                />
-                <figcaption class="offscreen">dribble-icon</figcaption>
-              </figure>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/consortium-of-digital-engineers/"
-              target="_blank"
-            >
-              <figure class="social-link">
-                <img
-                  src="./Assets/icon_social_linkedin.svg"
-                  width="9"
-                  height="9"
-                  alt="linkedin-icon"
-                />
+               <i class="fa-brands fa-linkedin"></i>
                 <figcaption class="offscreen">linkedin-icon</figcaption>
               </figure>
             </a>
-            <a href="https://www.instagram.com/consortiumofdigitalengineers/">
-              <figure class="social-link" target="_blank">
-                <img
-                  src="./Assets/icon_social_instagram.svg"
-                  width="9"
-                  height="9"
-                  alt="instagram-icon"
-                />
+            <a href="https://www.instagram.com/consortiumofdigitalengineers/" target="_blank">
+              <figure class="social-link">
+                <i class="fa-brands fa-instagram"></i>
                 <figcaption class="offscreen">instagram-icon</figcaption>
               </figure>
             </a>
-            <a href="#">
+            <a
+              href="https://www.behance.net/C_O_D_E "
+              target="_blank"
+            >
               <figure class="social-link">
-                <img
-                  src="./Assets/icon_social_facebook.svg"
-                  width="9"
-                  height="9"
-                  alt="facebook-icon"
-                  loading="lazy"
-                />
-                <figcaption class="offscreen">facebook-icon</figcaption>
+                <i class="fa-brands fa-behance"></i>
+                <figcaption class="offscreen">behance-icon</figcaption>
               </figure>
             </a>
+            <a href="https://dribbble.com/ConsortiumOfDigitalEngineers" target="_blank">
+              <figure class="social-link">
+               <i class="fa-brands fa-dribbble"></i>
+                <figcaption class="offscreen">dribble-icon</figcaption>
+              </figure>
+            </a>
+          
           </div>
           <a href="#"> <p class="toggle-footer">Privacy Policy</p></a>
         </div>
@@ -231,7 +204,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services" id="services">
+    <section class="services" id="service">
       <div class="services__header" data-aos="fade-up" data-aos-duration="1000">
         <h3 class="services_title">Services We Provide</h3>
         <h2 class="services_subtitle">
@@ -344,7 +317,7 @@
     </section>
 
     <!-- review section -->
-    <section class="review" id="reviews">
+    <section class="review" id="review">
       <div class="review__header" data-aos="fade-up" data-aos-duration="1000">
         <h3 class="review__title">Reviews</h3>
         <h2 class="review__subtitle">
@@ -428,12 +401,16 @@
             </figure>
 
             <p class="review__card-copy">
-              From concept to execution, this agency exceeded all our expectations. They developed a comprehensive digital strategy that included a new website, mobile app, and social media campaign
+              From concept to execution, this agency exceeded all our
+              expectations. They developed a comprehensive digital strategy that
+              included a new website, mobile app, and social media campaign
             </p>
 
             <div class="review__card-avatar">
-              <p class="review__card-avatar-name">Emily Chen</p> 
-              <p class="review__card-avatar-position">Marketing Director, Horizon Fitness</p>
+              <p class="review__card-avatar-name">Emily Chen</p>
+              <p class="review__card-avatar-position">
+                Marketing Director, Horizon Fitness
+              </p>
             </div>
           </div>
 
@@ -510,12 +487,17 @@
             </figure>
 
             <p class="review__card-copy">
-              I've worked with several agencies over the years, but none compare to the professionalism and creativity this team brings to the table. They completely redesigned our brand identity and built a stunning web application that our clients love
+              I've worked with several agencies over the years, but none compare
+              to the professionalism and creativity this team brings to the
+              table. They completely redesigned our brand identity and built a
+              stunning web application that our clients love
             </p>
 
             <div class="review__card-avatar">
               <p class="review__card-avatar-name">Marcus Johnson</p>
-              <p class="review__card-avatar-position">CEO, TechStart Solutions</p>
+              <p class="review__card-avatar-position">
+                CEO, TechStart Solutions
+              </p>
             </div>
           </div>
 
@@ -591,12 +573,18 @@
             </figure>
 
             <p class="review__card-copy">
-              Working with this team was an absolute game changer for our business. They took our outdated website and transformed it into a modern, user friendly platform that actually converts visitors into customers. What impressed me most was their attention to detail and how they took time to understand our brand values. 
+              Working with this team was an absolute game changer for our
+              business. They took our outdated website and transformed it into a
+              modern, user friendly platform that actually converts visitors
+              into customers. What impressed me most was their attention to
+              detail and how they took time to understand our brand values.
             </p>
 
             <div class="review__card-avatar">
               <p class="review__card-avatar-name">Sarah Mitchell</p>
-              <p class="review__card-avatar-position">Founder, GreenLeaf Organics</p>
+              <p class="review__card-avatar-position">
+                Founder, GreenLeaf Organics
+              </p>
             </div>
           </div>
         </div>
@@ -802,34 +790,18 @@
         <div class="footer__nav">
           <a href="#nav-header" class="footer__nav-link">Home</a>
           <a href="#About-Us" class="footer__nav-link">About Us</a>
-          <a href="#services" class="footer__nav-link">Services</a>
-          <a href="#reviews" class="footer__nav-link">Testimonials</a>
+          <a href="#service" class="footer__nav-link">Services</a>
+          <a href="#review" class="footer__nav-link">Testimonials</a>
         </div>
 
         <div class="footer__icons">
-          <figure class="footer__icon">
-            <a
-              href="https://www.linkedin.com/company/consortium-of-digital-engineers"
-              class="footer__icon-link"
-              target="_blank"
-            >
-              <img
-                src="./Assets/icon_social_linkedin.svg"
-                alt="LinkedIn-icon"
-                width="22"
-                height="22"
-            /></a>
-            <figcaption class="offscreen">LinkedIn-icon</figcaption>
-          </figure>
-
-          <figure class="footer__icon">
-            <a href="#" class="footer__icon-link"
-              ><img
-                src="./Assets/icon_social_facebook.svg"
-                alt=""
-                width="22"
-                height=""
-            /></a>
+                <figure class="footer__icon">
+            <a href="https://www.linkedin.com/company/consortium-of-digital-engineers/" 
+            class="footer__icon-link"
+            target="_blank">
+              <i class="fa-brands fa-linkedin"
+              ></i>
+            </a>
             <figcaption class="offscreen">linked icon</figcaption>
           </figure>
 
@@ -838,38 +810,30 @@
               href="https://www.instagram.com/consortiumofdigitalengineers/"
               class="footer__icon-link"
               target="_blank"
-              ><img
-                src="./Assets/icon_social_instagram.svg"
-                alt="instagram-icon"
-                width="22"
-                height="22"
-            /></a>
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
             <figcaption class="offscreen">instagram-icon</figcaption>
           </figure>
 
           <figure class="footer__icon">
-            <a
-              href="https://www.behance.net/C_O_D_E"
-              class="footer__icon-link"
-              target="_blank"
-              ><img
-                src="./Assets/icon_social_behance.svg"
-                alt="behaance-icon"
-                width="22"
-                height="22"
-            /></a>
-            <figcaption class="offscreen">Behance-icon</figcaption>
+            <a href="https://www.behance.net/C_O_D_E" 
+            class="footer__icon-link"
+            target="_blank">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <figcaption class="offscreen">behance icon</figcaption>
           </figure>
 
-          <figure class="footer__icon">
-            <a href="#" class="footer__icon-link"
-              ><img
-                src="./Assets/icon_social_dribble.svg"
-                alt=""
-                width="22"
-                height=""
-            /></a>
-            <figcaption class="offscreen">linked icon</figcaption>
+           <figure class="footer__icon">
+            <a
+              href="https://dribbble.com/ConsortiumOfDigitalEngineers"
+              class="footer__icon-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-dribbble"></i>
+            </a>
+            <figcaption class="offscreen">instagram-icon</figcaption>
           </figure>
         </div>
       </div>

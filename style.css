@@ -963,9 +963,20 @@ a:any-link {
 .footer__icons {
   display: flex;
   flex-flow: row;
-  gap: 4px;
   margin-top: 44px;
+  gap: 1.25rem;
 }
+
+.fa-brands{
+  color: #ffffff;
+  font-size: 20px;
+  gap: 1.25rem;
+}
+
+.fa-brands:hover{
+ color: var(--CRL-TANGERINE);
+}
+
 .footer__copy {
   width: 100%;
   margin-top: 44px;
@@ -1344,11 +1355,8 @@ a:any-link {
   }
 
   .footer__icons {
-    display: flex;
-    flex-flow: row;
-    gap: 4px;
-    margin-top: 0px;
-  }
+  margin-top: 0;
+}
 
   .footer__copy {
     width: 100%;
