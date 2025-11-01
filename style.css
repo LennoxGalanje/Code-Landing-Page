@@ -1328,7 +1328,7 @@ a:any-link {
     flex-flow: column;
     align-items: center;
     background-color: var(--CLR-CYAN);
-    padding: 16px 102px 32px 102px;
+    padding: 1rem 3rem ;
   }
 
   .footer_content {
