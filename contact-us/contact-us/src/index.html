@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Your Brand</title>
+<meta name="description" content="Contact our support team 24/7 for questions or information.">
+<link rel="icon" href="images/Logo_CODE_Header.png">
+<link href="./output.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/906a6fa1e1.js" crossorigin="anonymous" defer></script>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    .mobile-menu.active {
+        max-height: 500px;
+    }
+    
+    .mobile-dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    .mobile-dropdown-content.active {
+        max-height: 300px;
+    }
+</style>
+</head>
+<body class="h-screen">
+
+<!-- Navigation Bar -->
+<header>
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-lg">
+    <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+            
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#home">
+                    <img src="images/Logo_CODE_Header.png" alt="Company logo" class="w-[73px]  h-[40px]">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center -space-x-2.5 lg:space-x-3 ">
+                <a href="#home" class="nav-link px-4 py-2 text-[#064B49] hover:text-[#E59500] font-medium transition-colors duration-200 relative group">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E59500] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                    <a href="#about" class="nav-link px-4 py-2 text-[#064B49] hover:text-[#E59500] font-medium transition-colors duration-200 relative group">
+                    About Us
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E59500] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                
+                <a href="#services" class="nav-link px-4 py-2 text-[#064B49] hover:text-[#E59500] font-medium transition-colors duration-200 relative group">
+                    Services
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E59500] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                
+                <a href="#testimonials" class="nav-link px-4 py-2 text-[#064B49] hover:text-[#E59500] font-medium transition-colors duration-200 relative group">
+                    Testimonials
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E59500] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <!-- CTA Button - Desktop -->
+            <div class="hidden md:flex items-center">
+                <button onclick="location.href='#contact'" aria-label="Go to contact section" class="bg-transparent border-2 border-[#064B49] hover:bg-[#064B49] text-[#064B49] px-6 py-2 rounded-lg hover:text-white font-medium  transition-all duration-300 transform hover:scale-105">
+                    Let's Connect
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" aria-controls="mobile-menu" aria-expanded="false" class="text-[#064B49] hover:text-[#064B49] focus:outline-none transition-colors duration-200">
+                    <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="close-icon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-[#064B49] ">
+        <!-- mobile menu header image -->
+        <div class="w-[128px] h-[202px] mx-auto py-6"><img src="images/mobile-imag-header.png" alt=""></div>
+
+        <!-- menu for mobile -->
+        <div class="flex flex-col items-center justify-betweent px-4 pt-2 pb-2  text-2xl text-bold text-white bg-[#064B49]  shadow-lg ">
+            <a href="#about" class="block px-4  text-white  hover:text-[#E59500] rounded-lg transition-colors duration-200">
+                About
+            </a>
+                <a href="#services" class="block px-4  text-white  hover:text-[#E59500] rounded-lg transition-colors duration-200">
+                Services
+            </a>
+            <a href="#testimonials" class="block px-4  text-white  hover:text-[#E59500] rounded-lg transition-colors duration-200">
+                Testimonials
+            </a>
+            
+            <a href="#contact" class="block px-4 py-1 text-white  hover:text-[#E59500] rounded-lg transition-colors duration-200">
+                Contact
+            </a>
+            <!-- mobile view btn -->
+            <div class="pt-5">
+                <button onclick="location.href='#contact'" class="w-full bg-[#1F7A77] text-white px-6 py-2 rounded-lg font-[18px] shadow-lg transition-all duration-300">
+                    Get Started
+                </button>
+            </div>
+            <!-- soical icons  -->
+                <div class="pt-6  text-[14px] flex flex-row items-center justify-between gap-6 py-3">
+                <a href="https://www.behance.net/C_O_D_E"> <i class="fa-brands fa-behance fa-xl " style="color: white;"></i></a>
+                <a href="https://dribbble.com/ConsortiumOfDigitalEngineers"><i class="fa-solid fa-basketball fa-xl " style="color: white;"></i> </a>
+                  <a href="https://www.instagram.com/consortiumofdigitalengineers/"><i class="fa-brands fa-instagram fa-xl" style="color: #fafafa;"></i></a> 
+                <a href="https://www.linkedin.com/company/consortium-of-digital-engineers/"><i class="fa-brands fa-linkedin-in fa-xl " style="color: white;"></i></a> 
+               
+                
+
+                </div>
+
+        </div>
+    </div>
+ </nav>
+</header>
+
+<main  class=" ">
+<!-- Hero Section -->
+<section id="home" class="max-w-7xl mx-auto flex flex-col pt-32 pb-20 px-4 md:px-[23px] lg:px-[31px] md:flex-row md:gap-8 lg:gap-12 justify-between md:items-start  ">
+    <div class="contact-us-section w-full md:w-1/2 lg:w-1/2">
+    <!-- contact us Details  -->
+        <div class=" contact-inner flex flex-col md:flex-col lg:flex-col md:text-start lg:text-start">
+            <!-- ============================================ -->
+    <div id="contact" class="max-w-7xl mx-auto text-start">
+        <h1 class="text-2xl md:text-[20px] lg:text-[20px] font-bold text-[#064B49] mb-6">
+            Contact Us
+        </h1>
+        <h2 class="text-4xl md:text-[40px] lg:text-[40px] mb-8 font-bold bg-gradient-to-r from-[#004342] to-[#E59500] text-transparent bg-clip-text"> 
+        Our support team is available 24/7 to assist with any questions or information you need.</h2>
+            </div>
+
+            <!-- ============================================ -->
+             <div class=" flex-none md:flex lg:flex md:flex-row lg:flex-row ">
+    <div class="max-w-7xl  md:text-start lg:text-start sm:text-start">
+        <h1 class="text-3xl md:text-[20px] lg:text-[20px] font-bold text-gray-900 mb-6">
+            Customer Support
+        </h1>
+        <p class="text-2xl md:text-2xl text-gray-900 mb-8 max-w-3xl mx-auto">
+            Experience the future of web design with our responsive navigation system
+        </p>
+    </div>
+
+    <!-- ============================================ -->
+    <div class=" mx-auto md:text-start lg:text-start sm:text-start">
+        <h1 class="text-3xl md:text-[20px] lg:text-[20px] font-bold text-gray-900 mb-6">
+            Feedback and Suggestions
+        </h1>
+        <p class="text-2xl md:text-xl lg:text-xl text-gray-900 mb-8 max-w-3xl mx-auto">
+            We vaalue your important feedbacks and are continuously working towards  improving ourselves to help you better
+        </p>
+    </div>
+</div>
+    
+    </div>
+
+
+    <!-- ====================Contact & Social Icons ================= -->
+     <div class=" contact-icons flex flex-col items-start justify-center bg-[#E1E1E1] rounded-lg  p-4">
+<div class="row-1 grid grid-cols-2 items-stretch gap-4 mb-7 ">
+  
+  <div class=" col-1 w-full md:w-full lg:w-full flex items-center gap-4 p-4 rounded-lg bg-white border border-gray-200 shadow row-start-1 col-start-1 ">
+    <i class="fa-solid fa-envelope fa-lg" style="color: black;"></i>
+
+    <div class="flex flex-col ml-1 flex-1 min-w-0">
+      <h1 class="text-[15px] font-bold m-0 leading-tight">Email</h1>
+      <p class="text-gray-600 m-0 text-[9px] leading-tight break-words">info.code2025@gmail.com</p>
+    </div>
+  </div>
+
+  <div class=" col-2 w-full md:w-full lg:w-full flex items-center gap-4 p-4 rounded-lg bg-white border border-gray-200 shadow row-start-1 col-start-2">
+    <i class="fa-solid fa-phone fa-lg" style="color: black;"></i>
+
+    <div class="flex flex-col ml-1 flex-1 min-w-0">
+      <h1 class="text-[15px] font-bold mr-0 leading-tight">Mobile</h1>
+      <p class="text-gray-600 m-0 text-[12px] leading-tight break-words">+919022962695</p>
+    </div>
+  </div>
+
+  
+  
+    <div class="col-3 w-full md:w-full lg:w-full flex items-center gap-4 p-4 rounded-lg bg-white border border-gray-200 shadow row-start-2 col-start-1">
+      <i class="fa-solid fa-clock fa-lg" style="color: black;"></i>
+  
+      <div class="flex flex-col ml-1 flex-1 min-w-0">
+        <h1 class="text-[15px] font-bold m-0 leading-tight">Availability</h1>
+        <p class="text-gray-600 m-0 text-[12px] leading-tight break-words">Daily 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+  
+    <div class="col-4 w-full md:w-full lg:w-full flex flex-wrap items-center gap-4 p-4 rounded-lg bg-white border border-gray-200  row-start-2 col-start-2">
+        <a href="https://www.linkedin.com/company/consortium-of-digital-engineers/"><i class="fa-brands fa-linkedin fa-lg" style="color: black;"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61573393587026"><i class="fa-brands fa-square-facebook fa-lg" style="color: black;"></i></a>
+        <a href="https://www.instagram.com/consortiumofdigitalengineers/"><i class="fa-brands fa-square-instagram fa-lg" style="color: black;"></i></a>
+        <a href="https://www.behance.net/C_O_D_E"><i class="fa-brands fa-square-behance fa-lg" style="color: black;"></i></a>
+        <a href="https://dribbble.com/ConsortiumOfDigitalEngineers"><i class="fa-solid fa-basketball fa-lg" style="color: black;"></i></a>
+    </div>
+
+</div>
+</div>
+</div>
+
+<div class="form-section w-full md:w-1/2 lg:w-1/2 mt-[30px] md:mt-[30px] lg:mt-[30px] ">
+<form class="contact-form  grid gap-4 max-w-3xl bg-gray-100 p-4 rounded-lg text-[15px] md:min-h-[900px] lg:min-h-[700px]" aria-label="Contact form">
+    <label class="grid gap-1">
+      <span class="text-black font-bold">Name</span>
+      <input type="text" required class=" px-6 py-8 rounded-lg h-[40px] bg-white" placeholder="Your name" />
+    </label>
+    <label class="grid gap-1">
+      <span class="text-black font-bold">Email</span>
+      <input type="email" required class=" px-4 py-8 rounded-lg h-[40px] bg-white" placeholder="you@example.com" />
+    </label>
+    <label class="grid gap-1">
+        <span class="text-black font-bold">Mobile</span>
+        <input type="email" required class=" px-4 py-8 rounded-lg h-[40px] bg-white" placeholder="Enter Mobile Number" />
+      </label>
+      <div class="flex flex-row gap-4">
+        <label class="grid gap-0">
+            <span class="text-black font-bold leading-tight">What service do you need ?</span>
+            <select required class=" px-4 pr-8 rounded-lg bg-white border border-gray-200 h-[5.25rem]">
+              <option value="" disabled selected>Select a service</option>
+              <option>Web Design</option>
+              <option>Branding</option>
+              <option>UX Design</option>
+              <option>Business Consultation</option>
+            </select>
+          </label>
+          <label class="grid gap-1">
+            <span class="text-black font-bold">Message</span>
+            <textarea required rows="5" class=" px-4  rounded-lg bg-white h-[5.25rem] resize-none" placeholder="How can we help?"></textarea>
+          </label>
+      </div>
+   
+     <button type="submit" class="bg-[#064B49] font-bold text-[18px] md:text-[16px] lg:text-[16px] text-white px-6 md:px-4 lg:px-5 py-5 md:py-3 lg:py-3 rounded-lg hover:bg-[#1F7A77] transition-colors">Send Message</button>
+  </form>
+
+</div>
+</section>
+
+
+<section class="footer-section bg-[#064B49] py-6 ">
+    <div class="footer-content w-full px-4 md:px-8 lg:px-12 flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-between md:gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
+        <div class="footer-logo mt-[50px] md:mt-0">
+            <img src="images/Logo_CODE_Footer.png" alt="Company logo" class="w-[80px] h-[40px] md:flex-row md:items-center md:justify-center">
+        </div>
+        <ul class="flex flex-col items-center justify-center gap-[16px] pt-2 font-bold text-[18px] md:flex-row md:items-center md:justify-center md:gap-8">
+            <li class="text-white hover:text-[#E59500]">Home</li>
+            <li class="text-white hover:text-[#E59500]">About Us</li>
+            <li class="text-white hover:text-[#E59500]">Services</li>
+            <li class="text-white hover:text-[#E59500]">Testimonials</li>
+            
+        </ul>
+        <div class="social-icons flex flex-row items-center justify-center gap-4 pt-2 md:pt-0 my-[20px] md:my-0">
+            <a href="https://www.linkedin.com/company/consortium-of-digital-engineers/"><i class="fa-brands fa-linkedin-in" style="color: white;"></i>
+            <a href="https://www.behance.net/C_O_D_E"><i class="fa-brands fa-behance fa-sm " style="color: white;"></i></a>
+            <a href="https://dribbble.com/ConsortiumOfDigitalEngineers"><i class="fa-solid fa-basketball fa-sm  " style="color: white;"></i></a>
+             <a href="https://www.instagram.com/consortiumofdigitalengineers/"><i class="fa-brands fa-instagram" style="color: #fafafa;"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in fa-sm " style="color: white;"></i></a>
+        </div>
+
+
+    </div>
+
+</section>
+<footer class="w-full px-4 md:px-8 py-6 lg:px-12 flex flex-col md:flex-row lg:flex-row items-center justify-center md:justify-between lg:justify-between gap-8 bg-[#064B49]">
+    <p class="text-[#FFFFFF]/70 text-center text-[12px]">©2025 Code. All Rights Reserved</p>
+    <p class="text-[#FFFFFF]/70 text-center text-[12px]">Privacy Policy</p>
+</footer>
+</main>
+
+
+
+<!-- JavaScript -->
+<script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function() {
+        const isDesktop = window.innerWidth >= 640; // sm breakpoint
+        if (isDesktop && window.scrollY > 20) {
+            navbar.classList.add('bg-white/80', 'backdrop-blur-lg', 'shadow-lg');
+        } else {
+            navbar.classList.remove('bg-white/80', 'backdrop-blur-lg', 'shadow-lg');
+        }
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+        const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+        mobileMenuBtn.setAttribute('aria-expanded', (!expanded).toString());
+    });
+    
+    // Remove unused dropdown handlers (cleaned)
+    
+    // Close mobile menu when clicking on links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+
+    // Footer year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear().toString();
+    }
+    });
+</script>
+
